@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(to right, #ddd6f3, #faaca8);
+  text-align: center;
+}
+h2 {
+  color: rgb(226, 86, 43);
+  font-size: 2.5rem;
+}
+.win-message {
+  margin: auto;
+}
+.winner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+}
+.winner img {
+  height: 2rem;
+  width: 2rem;
+  margin-right: 0.4rem;
+  margin-left: 0.5rem;
+}
+.winner p {
+  font-size: 1.5rem;
+  color: darkviolet;
+  font-weight: bold;
+}
+.container {
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.game {
+  width: 60vmin;
+  height: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.box {
+  font-size: 8vmin;
+  height: 17vmin;
+  width: 17vmin;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.15);
+  color: midnightblue;
+}
+.reset,
+.newGame {
+  width: 20vmin;
+  height: 7vmin;
+  border-radius: 0.5rem;
+  outline: none;
+  background: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  font-size: 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  color: darkblue;
+  font-weight: bold;
+}
+.hide {
+  display: none;
+}
