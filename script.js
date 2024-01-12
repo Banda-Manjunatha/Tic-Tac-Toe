@@ -62,11 +62,19 @@ const checkWinner = () => {
     let pos2Val = boxes[pattern[1]].innerText;
     let pos3Val = boxes[pattern[2]].innerText;
 
-    if (pos1Val != "" && pos2Val != "" && pos3Val != "") {
+    if (pos1Val !== "" && pos2Val !== "" && pos3Val !== "") {
       if (pos1Val === pos2Val && pos2Val === pos3Val) {
         showWinner(pos1Val);
+        return; // Exit the function early if a winner is found
       }
     }
+  }
+
+  // If no winner is found, check for a draw
+  if ([...boxes].every((box) => box.innerText !== "")) {
+    msg.innerText = "It's a draw!";
+    winContainer.classList.remove("hide");
+    disableBoxes();
   }
 };
 
