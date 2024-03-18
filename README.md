@@ -2,6 +2,10 @@
 
 Welcome to the Tic-Tac-Toe Game project! This web application allows two players to play the classic Tic-Tac-Toe game. The project is built using HTML for structure, CSS for styling, and JavaScript for game logic.
 
+## Live Showcase
+
+To explore my Tic-Tac-Toe  project, You can follow this link: [Tic-Tac-Toe Live Link](https://manjunath-tic-tac-toe.netlify.app/)
+
 ## Table of Contents
 
 - [Description](#description)
